@@ -1,0 +1,9 @@
+{
+	"name": "ADFprojectEnd2End",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "705092fa-2b2e-474e-b008-a21533ded806",
+		"tenantId": "f47a24a2-572d-4cfb-83f3-dcf91b5c6274"
+	}
+}
