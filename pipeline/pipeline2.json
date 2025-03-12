@@ -48,21 +48,23 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "GitDataset",
-						"type": "DatasetReference",
-						"parameters": {
-							"FileName": "netflix_titles.csv"
-						}
+						"referenceName": "dt",
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Blobtit",
+						"referenceName": "blobdt",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
+		"parameters": {
+			"p_array": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
