@@ -1,0 +1,30 @@
+{
+	"name": "GitDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHttpConnection",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "Praveenrpk123/DEProject/refs/heads/main/@{dataset().FileName}.csv",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
