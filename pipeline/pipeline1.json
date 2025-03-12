@@ -96,7 +96,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "Validation_file",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"TitleFile": {
+								"value": "netflix_titles.csv",
+								"type": "Expression"
+							}
+						}
 					},
 					"timeout": "0.12:00:00",
 					"sleep": 10
