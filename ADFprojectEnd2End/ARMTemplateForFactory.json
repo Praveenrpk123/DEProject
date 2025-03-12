@@ -232,7 +232,9 @@
 							{
 								"referenceName": "blobdt",
 								"type": "DatasetReference",
-								"parameters": {}
+								"parameters": {
+									"Filename": "netflix_titles"
+								}
 							}
 						]
 					}
@@ -429,7 +431,7 @@
 				"parameters": {
 					"Filename": {
 						"type": "string",
-						"defaultValue": "netflix_titles"
+						"defaultValue": "netflix_titles.csv"
 					}
 				},
 				"annotations": [],
