@@ -158,11 +158,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "var",
-					"value": {
-						"value": "@activity('GithubMetadat').output",
-						"type": "Expression"
-					}
+					"variableName": "GitVar",
+					"value": ""
 				}
 			}
 		],
