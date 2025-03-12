@@ -151,7 +151,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "GitVar",
+					"variableName": "GitVari",
 					"value": {
 						"value": "@activity('GithubMetadat').output",
 						"type": "Expression"
@@ -185,6 +185,9 @@
 		"variables": {
 			"GitVar": {
 				"type": "String"
+			},
+			"GitVari": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
