@@ -5,8 +5,6 @@
 			{
 				"name": "Loop_Activity",
 				"type": "ForEach",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Validation",
@@ -98,8 +96,6 @@
 				"name": "Validation",
 				"description": "Validating a file exists with a name title",
 				"type": "Validation",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Var_GithubMetatadata",
@@ -159,7 +155,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "GitVar",
-					"value": ""
+					"value": {
+						"value": "@activity('GithubMetadat').output.Response",
+						"type": "Expression"
+					}
 				}
 			}
 		],
