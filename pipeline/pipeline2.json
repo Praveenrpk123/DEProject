@@ -57,7 +57,7 @@
 						"referenceName": "blobdt",
 						"type": "DatasetReference",
 						"parameters": {
-							"Filename": "netflix_titles"
+							"Filename": "netflix_titles.csv"
 						}
 					}
 				]
