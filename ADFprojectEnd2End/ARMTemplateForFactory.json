@@ -187,11 +187,13 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"variableName": "GitVari",
-							"value": {
-								"value": "@activity('GithubMetadat').output",
-								"type": "Expression"
-							}
+							"variableName": "pipelineReturnValue",
+							"value": [
+								{
+									"value": {}
+								}
+							],
+							"setSystemVariable": true
 						}
 					}
 				],
@@ -227,6 +229,9 @@
 					},
 					"GitVari": {
 						"type": "Array"
+					},
+					"var": {
+						"type": "String"
 					}
 				},
 				"annotations": []
