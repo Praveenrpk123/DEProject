@@ -133,6 +133,27 @@
 					"method": "GET",
 					"url": "https://github.com/Praveenrpk123/DEProject"
 				}
+			},
+			{
+				"name": "Var_GithubMetatadata",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "GithubMetadat",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"setSystemVariable": true
+				}
 			}
 		],
 		"parameters": {
