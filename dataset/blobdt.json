@@ -8,7 +8,7 @@
 		"parameters": {
 			"Filename": {
 				"type": "string",
-				"defaultValue": "netflix_titles"
+				"defaultValue": "netflix_titles.csv"
 			}
 		},
 		"annotations": [],

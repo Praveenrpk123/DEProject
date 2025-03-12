@@ -55,7 +55,10 @@
 				"outputs": [
 					{
 						"referenceName": "blobdt",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Filename": "netflix_titles"
+						}
 					}
 				]
 			}
