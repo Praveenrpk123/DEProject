@@ -162,6 +162,30 @@
 							"headers": {},
 							"url": "https://github.com/Praveenrpk123/DEProject"
 						}
+					},
+					{
+						"name": "Var_GithubMetatadata",
+						"type": "SetVariable",
+						"dependsOn": [
+							{
+								"activity": "GithubMetadat",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"policy": {
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"variableName": "GitVar",
+							"value": {
+								"value": "@activity('GithubMetadat').output",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"policy": {
@@ -188,6 +212,11 @@
 								"FileName": "netflix_directors.csv"
 							}
 						]
+					}
+				},
+				"variables": {
+					"GitVar": {
+						"type": "String"
 					}
 				},
 				"annotations": []
