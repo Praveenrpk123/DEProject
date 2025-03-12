@@ -1,0 +1,22 @@
+{
+	"name": "dt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHttpConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Praveenrpk123/DEProject/refs/heads/main/netflix_titles.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
