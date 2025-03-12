@@ -301,7 +301,14 @@
 						"type": "ForEach",
 						"state": "Inactive",
 						"onInactiveMarkAs": "Succeeded",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Validation",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"userProperties": [],
 						"typeProperties": {
 							"activities": [
@@ -385,6 +392,8 @@
 						"name": "Validation",
 						"description": "Validating a file exists with a name title",
 						"type": "Validation",
+						"state": "Inactive",
+						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
@@ -400,6 +409,24 @@
 							},
 							"timeout": "0.12:00:00",
 							"sleep": 10
+						}
+					},
+					{
+						"name": "GithubMetadat",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"method": "GET",
+							"headers": {},
+							"url": "https://github.com/Praveenrpk123/DEProject"
 						}
 					}
 				],
