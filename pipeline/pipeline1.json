@@ -151,8 +151,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "pipelineReturnValue",
-					"setSystemVariable": true
+					"variableName": "GitVar",
+					"value": {
+						"value": "@activity('GithubMetadat').output",
+						"type": "Expression"
+					}
 				}
 			}
 		],
@@ -177,6 +180,11 @@
 						"FileName": "netflix_directors.csv"
 					}
 				]
+			}
+		},
+		"variables": {
+			"GitVar": {
+				"type": "String"
 			}
 		},
 		"annotations": []
