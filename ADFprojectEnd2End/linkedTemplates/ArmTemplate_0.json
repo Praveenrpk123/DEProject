@@ -86,7 +86,7 @@
 							"value": "@dataset().FolderName",
 							"type": "Expression"
 						},
-						"fileSystem": "raw"
+						"fileSystem": "bronze"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
