@@ -148,7 +148,7 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": {
-							"value": "Praveenrpk123/DEProject/refs/heads/main/@{dataset().FileName}.csv",
+							"value": "Praveenrpk123/DEProject/refs/heads/main/@{dataset().FileName}",
 							"type": "Expression"
 						}
 					},
