@@ -44,12 +44,12 @@
 						"userProperties": [],
 						"typeProperties": {
 							"items": {
-								"value": "@activity('GitDataMovement_copy1').output",
+								"value": "@activity('GitDataMovement').output",
 								"type": "Expression"
 							},
 							"activities": [
 								{
-									"name": "GitDataMovement_copy1",
+									"name": "GitDataMovement",
 									"type": "Copy",
 									"dependsOn": [],
 									"policy": {
@@ -65,7 +65,8 @@
 											"type": "DelimitedTextSource",
 											"storeSettings": {
 												"type": "HttpReadSettings",
-												"requestMethod": "GET"
+												"requestMethod": "GET",
+												"requestTimeout": ""
 											},
 											"formatSettings": {
 												"type": "DelimitedTextReadSettings"
@@ -74,12 +75,13 @@
 										"sink": {
 											"type": "DelimitedTextSink",
 											"storeSettings": {
-												"type": "AzureBlobFSWriteSettings"
+												"type": "AzureBlobFSWriteSettings",
+												"copyBehavior": "FlattenHierarchy"
 											},
 											"formatSettings": {
 												"type": "DelimitedTextWriteSettings",
 												"quoteAllText": true,
-												"fileExtension": ".txt"
+												"fileExtension": ".csv"
 											}
 										},
 										"enableStaging": false,
