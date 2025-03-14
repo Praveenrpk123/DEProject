@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('GitDataMovement_copy1').output",
+						"value": "@activity('GitDataMovement').output",
 						"type": "Expression"
 					},
 					"activities": [
