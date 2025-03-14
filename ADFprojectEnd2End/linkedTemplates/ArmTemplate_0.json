@@ -299,8 +299,6 @@
 					{
 						"name": "Loop_Activity",
 						"type": "ForEach",
-						"state": "Inactive",
-						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "Validation",
@@ -311,6 +309,10 @@
 						],
 						"userProperties": [],
 						"typeProperties": {
+							"items": {
+								"value": "@activity('GitDataMovement_copy1').output",
+								"type": "Expression"
+							},
 							"activities": [
 								{
 									"name": "GitDataMovement_copy1",
@@ -392,8 +394,6 @@
 						"name": "Validation",
 						"description": "Validating a file exists with a name title",
 						"type": "Validation",
-						"state": "Inactive",
-						"onInactiveMarkAs": "Succeeded",
 						"dependsOn": [
 							{
 								"activity": "Var_GithubMetatadata",
@@ -453,13 +453,11 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"variableName": "pipelineReturnValue",
-							"value": [
-								{
-									"value": {}
-								}
-							],
-							"setSystemVariable": true
+							"variableName": "GitVar",
+							"value": {
+								"value": "@activity('GithubMetadat').output.Response",
+								"type": "Expression"
+							}
 						}
 					}
 				],
