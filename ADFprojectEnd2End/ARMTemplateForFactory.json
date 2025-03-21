@@ -604,7 +604,8 @@
 						"folderPath": {
 							"value": "@formatDateTime(utcNow(), 'yyyy')",
 							"type": "Expression"
-						}
+						},
+						"fileSystem": "raw"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
